@@ -42,7 +42,7 @@ const App = () => {
     setResult('')
   }
 
-  const handleClick = (text) => {
+  const handleExp = (text) => {
     const newExp = exp + text
     setExp(newExp)
     try {
@@ -77,13 +77,13 @@ const App = () => {
         </TouchableOpacity>
         <TouchableOpacity
           style={[calculator.button, calculator.buttonGray]}
-          onPress={() => handleClick(' % ')}
+          onPress={() => handleExp(' % ')}
         >
           <Text style={calculator.buttonText}>%</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[calculator.button, calculator.buttonOrange]}
-          onPress={() => handleClick(' ÷ ')}
+          onPress={() => handleExp(' ÷ ')}
         >
           <Text style={calculator.buttonText}>÷</Text>
         </TouchableOpacity>
@@ -91,25 +91,25 @@ const App = () => {
       <View style={calculator.buttonGrid}>
         <TouchableOpacity
           style={calculator.button}
-          onPress={() => handleClick('7')}
+          onPress={() => handleExp('7')}
         >
           <Text style={calculator.buttonText}>7</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={calculator.button}
-          onPress={() => handleClick('8')}
+          onPress={() => handleExp('8')}
         >
           <Text style={calculator.buttonText}>8</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={calculator.button}
-          onPress={() => handleClick('9')}
+          onPress={() => handleExp('9')}
         >
           <Text style={calculator.buttonText}>9</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[calculator.button, calculator.buttonOrange]}
-          onPress={() => handleClick(' ✕ ')}
+          onPress={() => handleExp(' ✕ ')}
         >
           <Text style={calculator.buttonText}>✕</Text>
         </TouchableOpacity>
@@ -117,25 +117,25 @@ const App = () => {
       <View style={calculator.buttonGrid}>
         <TouchableOpacity
           style={calculator.button}
-          onPress={() => handleClick('4')}
+          onPress={() => handleExp('4')}
         >
           <Text style={calculator.buttonText}>4</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={calculator.button}
-          onPress={() => handleClick('5')}
+          onPress={() => handleExp('5')}
         >
           <Text style={calculator.buttonText}>5</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={calculator.button}
-          onPress={() => handleClick('6')}
+          onPress={() => handleExp('6')}
         >
           <Text style={calculator.buttonText}>6</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[calculator.button, calculator.buttonOrange]}
-          onPress={() => handleClick(' - ')}
+          onPress={() => handleExp(' - ')}
         >
           <Text style={calculator.buttonText}>-</Text>
         </TouchableOpacity>
@@ -143,25 +143,25 @@ const App = () => {
       <View style={calculator.buttonGrid}>
         <TouchableOpacity
           style={calculator.button}
-          onPress={() => handleClick('1')}
+          onPress={() => handleExp('1')}
         >
           <Text style={calculator.buttonText}>1</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={calculator.button}
-          onPress={() => handleClick('2')}
+          onPress={() => handleExp('2')}
         >
           <Text style={calculator.buttonText}>2</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={calculator.button}
-          onPress={() => handleClick('3')}
+          onPress={() => handleExp('3')}
         >
           <Text style={calculator.buttonText}>3</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[calculator.button, calculator.buttonOrange]}
-          onPress={() => handleClick('!')}
+          onPress={() => handleExp('!')}
         >
           <Text style={calculator.buttonText}>!</Text>
         </TouchableOpacity>
@@ -169,19 +169,19 @@ const App = () => {
       <View style={calculator.buttonGrid}>
         <TouchableOpacity
           style={calculator.button}
-          onPress={() => handleClick('0')}
+          onPress={() => handleExp('0')}
         >
           <Text style={calculator.buttonText}>0</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={calculator.button}
-          onPress={() => handleClick('.')}
+          onPress={() => handleExp('.')}
         >
           <Text style={calculator.buttonText}>.</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={calculator.button}
-          onPress={() => handleClick(' + ')}
+          onPress={() => handleExp(' + ')}
         >
           <Text style={calculator.buttonText}>+</Text>
         </TouchableOpacity>
