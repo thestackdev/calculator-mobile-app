@@ -6,7 +6,7 @@ import {
   SafeAreaView,
   ScrollView,
 } from 'react-native'
-import { globals, calculator } from './styles/exports'
+import { Styles } from './exports'
 
 const App = () => {
   const [exp, setExp] = useState('')
@@ -53,143 +53,143 @@ const App = () => {
   }
 
   return (
-    <SafeAreaView style={globals.safeArea}>
-      <View style={calculator.textContainer}>
-        <ScrollView horizontal style={calculator.scrollContainer}>
-          <Text style={calculator.inputText}>{exp}</Text>
+    <SafeAreaView style={Styles.Calculator.safeArea}>
+      <View style={Styles.Calculator.textContainer}>
+        <ScrollView horizontal style={Styles.Calculator.scrollContainer}>
+          <Text style={Styles.Calculator.inputText}>{exp}</Text>
         </ScrollView>
-        <ScrollView horizontal style={calculator.scrollContainer}>
-          <Text style={calculator.outputText}>{result}</Text>
+        <ScrollView horizontal style={Styles.Calculator.scrollContainer}>
+          <Text style={Styles.Calculator.outputText}>{result}</Text>
         </ScrollView>
       </View>
-      <View style={calculator.buttonGrid}>
+      <View style={Styles.Calculator.buttonGrid}>
         <TouchableOpacity
-          style={[calculator.button, calculator.buttonGray]}
+          style={[Styles.Calculator.button, Styles.Calculator.buttonGray]}
           onPress={handleClear}
         >
-          <Text style={calculator.buttonText}>AC</Text>
+          <Text style={Styles.Calculator.buttonText}>AC</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={[calculator.button, calculator.buttonGray]}
+          style={[Styles.Calculator.button, Styles.Calculator.buttonGray]}
           onPress={handleBack}
         >
-          <Text style={calculator.buttonText}>←</Text>
+          <Text style={Styles.Calculator.buttonText}>←</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={[calculator.button, calculator.buttonGray]}
+          style={[Styles.Calculator.button, Styles.Calculator.buttonGray]}
           onPress={() => handleExp(' % ')}
         >
-          <Text style={calculator.buttonText}>%</Text>
+          <Text style={Styles.Calculator.buttonText}>%</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={[calculator.button, calculator.buttonOrange]}
+          style={[Styles.Calculator.button, Styles.Calculator.buttonOrange]}
           onPress={() => handleExp(' ÷ ')}
         >
-          <Text style={calculator.buttonText}>÷</Text>
+          <Text style={Styles.Calculator.buttonText}>÷</Text>
         </TouchableOpacity>
       </View>
-      <View style={calculator.buttonGrid}>
+      <View style={Styles.Calculator.buttonGrid}>
         <TouchableOpacity
-          style={calculator.button}
+          style={Styles.Calculator.button}
           onPress={() => handleExp('7')}
         >
-          <Text style={calculator.buttonText}>7</Text>
+          <Text style={Styles.Calculator.buttonText}>7</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={calculator.button}
+          style={Styles.Calculator.button}
           onPress={() => handleExp('8')}
         >
-          <Text style={calculator.buttonText}>8</Text>
+          <Text style={Styles.Calculator.buttonText}>8</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={calculator.button}
+          style={Styles.Calculator.button}
           onPress={() => handleExp('9')}
         >
-          <Text style={calculator.buttonText}>9</Text>
+          <Text style={Styles.Calculator.buttonText}>9</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={[calculator.button, calculator.buttonOrange]}
+          style={[Styles.Calculator.button, Styles.Calculator.buttonOrange]}
           onPress={() => handleExp(' ✕ ')}
         >
-          <Text style={calculator.buttonText}>✕</Text>
+          <Text style={Styles.Calculator.buttonText}>✕</Text>
         </TouchableOpacity>
       </View>
-      <View style={calculator.buttonGrid}>
+      <View style={Styles.Calculator.buttonGrid}>
         <TouchableOpacity
-          style={calculator.button}
+          style={Styles.Calculator.button}
           onPress={() => handleExp('4')}
         >
-          <Text style={calculator.buttonText}>4</Text>
+          <Text style={Styles.Calculator.buttonText}>4</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={calculator.button}
+          style={Styles.Calculator.button}
           onPress={() => handleExp('5')}
         >
-          <Text style={calculator.buttonText}>5</Text>
+          <Text style={Styles.Calculator.buttonText}>5</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={calculator.button}
+          style={Styles.Calculator.button}
           onPress={() => handleExp('6')}
         >
-          <Text style={calculator.buttonText}>6</Text>
+          <Text style={Styles.Calculator.buttonText}>6</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={[calculator.button, calculator.buttonOrange]}
+          style={[Styles.Calculator.button, Styles.Calculator.buttonOrange]}
           onPress={() => handleExp(' - ')}
         >
-          <Text style={calculator.buttonText}>-</Text>
+          <Text style={Styles.Calculator.buttonText}>-</Text>
         </TouchableOpacity>
       </View>
-      <View style={calculator.buttonGrid}>
+      <View style={Styles.Calculator.buttonGrid}>
         <TouchableOpacity
-          style={calculator.button}
+          style={Styles.Calculator.button}
           onPress={() => handleExp('1')}
         >
-          <Text style={calculator.buttonText}>1</Text>
+          <Text style={Styles.Calculator.buttonText}>1</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={calculator.button}
+          style={Styles.Calculator.button}
           onPress={() => handleExp('2')}
         >
-          <Text style={calculator.buttonText}>2</Text>
+          <Text style={Styles.Calculator.buttonText}>2</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={calculator.button}
+          style={Styles.Calculator.button}
           onPress={() => handleExp('3')}
         >
-          <Text style={calculator.buttonText}>3</Text>
+          <Text style={Styles.Calculator.buttonText}>3</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={[calculator.button, calculator.buttonOrange]}
+          style={[Styles.Calculator.button, Styles.Calculator.buttonOrange]}
           onPress={() => handleExp('!')}
         >
-          <Text style={calculator.buttonText}>!</Text>
+          <Text style={Styles.Calculator.buttonText}>!</Text>
         </TouchableOpacity>
       </View>
-      <View style={calculator.buttonGrid}>
+      <View style={Styles.Calculator.buttonGrid}>
         <TouchableOpacity
-          style={calculator.button}
+          style={Styles.Calculator.button}
           onPress={() => handleExp('0')}
         >
-          <Text style={calculator.buttonText}>0</Text>
+          <Text style={Styles.Calculator.buttonText}>0</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={calculator.button}
+          style={Styles.Calculator.button}
           onPress={() => handleExp('.')}
         >
-          <Text style={calculator.buttonText}>.</Text>
+          <Text style={Styles.Calculator.buttonText}>.</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={calculator.button}
+          style={Styles.Calculator.button}
           onPress={() => handleExp(' + ')}
         >
-          <Text style={calculator.buttonText}>+</Text>
+          <Text style={Styles.Calculator.buttonText}>+</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={[calculator.button, calculator.buttonOrange]}
+          style={[Styles.Calculator.button, Styles.Calculator.buttonOrange]}
           onPress={handleEquals}
         >
-          <Text style={calculator.buttonText}>=</Text>
+          <Text style={Styles.Calculator.buttonText}>=</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
